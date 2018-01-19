@@ -13,4 +13,9 @@ export class AppComponent {
 		{species : "Ocelot", name : "Prince", age : 4, diet : "Carnivore", location : "Tropical Rain Forest Building", caretakers : 6, sex : "Male", likes : "Laying in the sunshine", dislikes : "Toys that are not rope-based"},
 		{species : "Northwest Black Tailed Deer", name : "Tinkerbell", age : 8, diet : "Herbivore", location : "Northern Trail", caretakers : 2, sex : "Female", likes : "Delicate roots and leaves", dislikes : "Loud Noises"}
 	];
+
+	clickToAdd(){
+		this.animals.push(new Zoo(" ", "New Animal", 0," ", " ", 0, " "," "," "));
+
+	}
 }
