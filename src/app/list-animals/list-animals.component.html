@@ -3,7 +3,7 @@
 		<div *ngIf="currentlyEditing != animal; then animalBlock; else editBox"></div>
 		<ng-template #animalBlock>
 			<h3>{{animal.name}}</h3>
-			<button type="button" name="button">Edit</button>
+			<button type="button" name="button" (click)="onEditClick(animal)">Edit</button>
 			<div class="meta">
 				<div class="meta-item"><span class="meta-title">Species:</span>{{animal.species}}</div>
 				<div class="meta-item"><span class="meta-title">Age:</span>{{animal.age}}</div>
@@ -15,9 +15,9 @@
 				<div class="meta-item"><span class="meta-title">Dislikes:</span>{{animal.dislikes}}</div>
 			</div>
 		</ng-template>
-		<app-edit-animal #editBox>
-
-		</app-edit-animal>
+		<ng-template #editBox>
+			<app-edit-animal></app-edit-animal>
+		</ng-template>
 	</div>
 
 </div>

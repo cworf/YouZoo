@@ -7,9 +7,13 @@ import { Zoo } from '../zoo-model';
 })
 export class ListAnimalsComponent implements OnInit {
  @Input() tempAnimals: Zoo[];
+
+	currentlyEditing: Zoo;
   constructor() { }
 
   ngOnInit() {
   }
-
+	onEditClick(animal){
+		this.currentlyEditing = animal;
+	}
 }
