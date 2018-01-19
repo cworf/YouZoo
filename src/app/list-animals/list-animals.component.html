@@ -14,7 +14,7 @@
 				<div class="meta-item"><span class="meta-title">Likes:</span>{{animal.likes}}</div>
 				<div class="meta-item"><span class="meta-title">Dislikes:</span>{{animal.dislikes}}</div>
 			</div>
-			<button type="button" name="button" (click)="onEditClick(animal)">Edit</button>
+			<button (click)="onEditClick(animal)" *ngIf="!currentlyEditing">Edit</button>
 		</ng-template>
 		<ng-template #editBox>
 			<app-edit-animal [currentlyEditingThis]="currentlyEditing" (doneSender)="clearEdit()"></app-edit-animal>

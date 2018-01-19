@@ -14,6 +14,7 @@ export class EditAnimalComponent implements OnInit {
 	sendDone(){
 		this.doneSender.emit();
 	}
+
   ngOnInit() {
   }
 }

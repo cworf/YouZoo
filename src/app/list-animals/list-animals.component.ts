@@ -16,7 +16,7 @@ export class ListAnimalsComponent implements OnInit {
 		this.currentlyEditing = null;
 	}
 	onEditClick(animal: Zoo){
-
+		this.currentlyEditing = animal;
 		console.log(animal)
 	}
 	addNewAndEdit(animal){
