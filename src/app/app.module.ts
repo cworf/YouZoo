@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ListAnimalsComponent } from './list-animals/list-animals.component';
 import { AddAnimalComponent } from './add-animal/add-animal.component';
+import { EditAnimalComponent } from './edit-animal/edit-animal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ListAnimalsComponent,
-    AddAnimalComponent
+    AddAnimalComponent,
+    EditAnimalComponent
   ],
   imports: [
     BrowserModule
