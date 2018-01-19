@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule }  from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ListAnimalsComponent } from './list-animals/list-animals.component';
@@ -16,7 +16,8 @@ import { EditAnimalComponent } from './edit-animal/edit-animal.component';
     EditAnimalComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+	FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,12 @@
-<h3>Name</h3>
+<h3><input type="text" [(ngModel)]="currentlyEditingThis.name" placeholder="Name"></h3>
 <div class="meta">
-	<div class="meta-item"><span class="meta-title">Species:</span>asdf</div>
-	<div class="meta-item"><span class="meta-title">Age:</span>asdf</div>
-	<div class="meta-item"><span class="meta-title">Diet:</span>asdf</div>
-	<div class="meta-item"><span class="meta-title">Location:</span>asdf</div>
-	<div class="meta-item"><span class="meta-title">Caretakers:</span>asdf</div>
-	<div class="meta-item"><span class="meta-title">Sex:</span>asdf</div>
-	<div class="meta-item"><span class="meta-title">Likes:</span>asdf</div>
-	<div class="meta-item"><span class="meta-title">Dislikes:</span>asdf</div>
+	<div class="meta-item"><span class="meta-title">Species:</span><input type="text" [(ngModel)]="currentlyEditingThis.species"></div>
+	<div class="meta-item"><span class="meta-title">Age:</span><input type="number" [(ngModel)]="currentlyEditingThis.age"></div>
+	<div class="meta-item"><span class="meta-title">Diet:</span><input type="text" [(ngModel)]="currentlyEditingThis.diet"></div>
+	<div class="meta-item"><span class="meta-title">Location:</span><input type="text" [(ngModel)]="currentlyEditingThis.location"></div>
+	<div class="meta-item"><span class="meta-title">Caretakers:</span><input type="number" [(ngModel)]="currentlyEditingThis.caretakers"></div>
+	<div class="meta-item"><span class="meta-title">Sex:</span><input type="text" [(ngModel)]="currentlyEditingThis.sex"></div>
+	<div class="meta-item"><span class="meta-title">Likes:</span><input type="text" [(ngModel)]="currentlyEditingThis.likes"></div>
+	<div class="meta-item"><span class="meta-title">Dislikes:</span><input type="text" [(ngModel)]="currentlyEditingThis.dislikes"></div>
 </div>
 <button type="button" name="button">Done</button>
