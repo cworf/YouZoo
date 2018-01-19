@@ -9,4 +9,4 @@
 	<div class="meta-item"><span class="meta-title">Likes:</span><input type="text" [(ngModel)]="currentlyEditingThis.likes"></div>
 	<div class="meta-item"><span class="meta-title">Dislikes:</span><input type="text" [(ngModel)]="currentlyEditingThis.dislikes"></div>
 </div>
-<button type="button" name="button">Done</button>
+<button type="button" name="button" (click)="sendDone()">Done</button>

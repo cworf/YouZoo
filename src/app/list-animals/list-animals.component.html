@@ -1,4 +1,4 @@
-<div class="animals">
+<div class="animals" >
 	<div class="animal" *ngFor="let animal of tempAnimals">
 		<div *ngIf="currentlyEditing != animal; then animalBlock; else editBox"></div>
 		<ng-template #animalBlock>
@@ -16,7 +16,7 @@
 			<button type="button" name="button" (click)="onEditClick(animal)">Edit</button>
 		</ng-template>
 		<ng-template #editBox>
-			<app-edit-animal [currentlyEditingThis]="currentlyEditing"></app-edit-animal>
+			<app-edit-animal [currentlyEditingThis]="currentlyEditing" (doneSender)="clearEdit()"></app-edit-animal>
 		</ng-template>
 	</div>
 

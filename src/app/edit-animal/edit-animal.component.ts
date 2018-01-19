@@ -8,8 +8,12 @@ import { Zoo } from '../zoo-model';
 })
 export class EditAnimalComponent implements OnInit {
 	@Input() currentlyEditingThis: Zoo;
-  constructor() { }
+	@Output() doneSender = new EventEmitter();
 
+  constructor() { }
+	sendDone(){
+		this.doneSender.emit();
+	}
   ngOnInit() {
   }
 }
