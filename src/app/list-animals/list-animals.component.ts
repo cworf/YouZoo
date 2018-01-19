@@ -6,7 +6,7 @@ import { Zoo } from '../zoo-model';
   styleUrls: ['./list-animals.component.scss']
 })
 export class ListAnimalsComponent implements OnInit {
- @Input() tempTaskList: Zoo[];
+ @Input() tempAnimals: Zoo[];
   constructor() { }
 
   ngOnInit() {
