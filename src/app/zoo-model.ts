@@ -1,22 +1,13 @@
 export class Zoo {
-	species = "";
-	name = "";
-	age = 0;
-	diet = "";
-	location = "";
-	caretakers = 0;
-	sex = "";
-	likes = "";
-	dislikes = "";
-	constructor(
-		species: string,
-		name: string,
-		age: number,
-		diet: string,
-		location: string,
-		caretakers: number,
-		sex: string,
-		likes: string,
-		dislikes: string
-	){}
+	species: string = "";
+	name: string = "";
+	age: number = 0;
+	diet: string = "";
+	location: string = "";
+	caretakers: number = 0;
+	sex: string = "";
+	likes: string = "";
+	dislikes: string = "";
+	newAnimal: boolean = true;
+	constructor(){}
 }

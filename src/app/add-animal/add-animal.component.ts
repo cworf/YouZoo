@@ -14,7 +14,7 @@ export class AddAnimalComponent implements OnInit {
   }
 
   clickToAdd(){
-	  const blankAnimal = new Zoo("", "New Animal", 0," ", " ", 0, " "," "," ");
+	  const blankAnimal = new Zoo();
 	  this.editNewSender.emit(blankAnimal);
   }
 
