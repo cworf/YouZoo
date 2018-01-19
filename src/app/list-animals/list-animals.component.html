@@ -1,3 +1,4 @@
+<app-add-animal (editNewSender)="addNewAndEdit($event)"></app-add-animal>
 <div class="animals" >
 	<div class="animal" *ngFor="let animal of tempAnimals">
 		<div *ngIf="currentlyEditing != animal; then animalBlock; else editBox"></div>

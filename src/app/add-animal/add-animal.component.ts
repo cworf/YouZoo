@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Zoo } from '../zoo-model';
 
 @Component({
   selector: 'app-add-animal',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-animal.component.scss']
 })
 export class AddAnimalComponent implements OnInit {
-
+	@Output() editNewSender = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  clickToAdd(){
+	  const blankAnimal = new Zoo("", "New Animal", 0," ", " ", 0, " "," "," ");
+	  this.editNewSender.emit(blankAnimal);
   }
 
 }
