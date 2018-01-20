@@ -1,4 +1,9 @@
 <app-add-animal (editNewSender)="addNewAndEdit($event)"></app-add-animal>
+<div class="filters">
+	<button value="all">View All Animals</button>
+	<button value="old">View Old Animals</button>
+	<button value="young">View Young Animals</button>
+</div>
 <div class="animals" >
 	<div class="animal" *ngFor="let animal of tempAnimals">
 		<div *ngIf="currentlyEditing != animal; then animalBlock; else editBox"></div>
