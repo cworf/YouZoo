@@ -17,10 +17,13 @@ export class AgePipe implements PipeTransform {
 		     oldAnimals.push(animal);
 		 }
 	  });
+	  console.log(age);
 	  if (age === "old") {
 	      return oldAnimals;
-	  } else {
+	  } else if (age === "young") {
 		  return youngAnimals;
+	  } else {
+		  return animalsIn;
 	  }
   }
 }

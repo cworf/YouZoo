@@ -8,6 +8,7 @@ import { Zoo } from '../zoo-model';
 export class ListAnimalsComponent implements OnInit {
  	@Input() tempAnimals: Zoo[];
 	currentlyEditing: Zoo;
+	filterAge: string = "all";
 	constructor() { }
 
 	ngOnInit() {
@@ -22,5 +23,8 @@ export class ListAnimalsComponent implements OnInit {
 	addNewAndEdit(animal){
 		this.tempAnimals.push(animal);
 		this.currentlyEditing = animal;
+	}
+	setFilter(age){
+		this.filterAge = age;
 	}
 }
