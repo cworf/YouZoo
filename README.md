@@ -1,27 +1,28 @@
-# ZooData
+### JS Week 3 Code Review - Epicodus
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+# You-Zoo
 
-## Development server
+### Author: Colin Worf
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` or use the `ng serve --open`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+This project is a result of our first look at angular. I used the Angular CLI to set up this project/.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Users can add animals to a zoo roster as well as edit.
 
-## Build
+Users can filter results live by clicking one of the three age filters on top.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+I tried my hand at an "edit in place" option where each field would be editable separately, however I got in over my head a bit and backed down to the edit form taking the place of the element being edited.
 
-## Running unit tests
+If I had more time for this one I would have worked more on the edit in place option, as well as some category separation in the initial sort.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instructions
 
-## Running end-to-end tests
+1. Clone project ```$ git clone https://github.com/cworf/YouZoo.git ```
+2. you must have Node.js, and angular-cli to build out this project
+3. from the projects root, run ```$ npm i```
+4. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` or use `ng serve --open`. The app will automatically reload if you change any of the source files.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Copyright
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Creative Commons
