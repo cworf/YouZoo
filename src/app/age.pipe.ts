@@ -17,7 +17,6 @@ export class AgePipe implements PipeTransform {
 		     oldAnimals.push(animal);
 		 }
 	  });
-	  console.log(age);
 	  if (age === "old") {
 	      return oldAnimals;
 	  } else if (age === "young") {

@@ -4,6 +4,9 @@
     display: grid;
     grid-template: auto / repeat(3, 1fr);
     grid-gap: 20px;
+	.meta{
+		margin-bottom:15px;
+	}
 	.meta-item {
 	    display: flex;
 	    justify-content: space-between;
@@ -20,6 +23,11 @@
 h3 {
     text-align: center;
     border-bottom: 1px solid;
-    padding: 20px;
+    padding: 20px 10px 5px;
+    margin-bottom: 5px;
+}
+h4 {
+    text-align: center;
+    font-size: 1em;
     margin-bottom: 20px;
 }

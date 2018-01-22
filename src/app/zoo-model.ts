@@ -1,4 +1,7 @@
+import * as moment from 'moment';
+
 export class Zoo {
+	added:string;
 	species: string = "";
 	name: string = "";
 	age: number = 0;
@@ -9,5 +12,7 @@ export class Zoo {
 	likes: string = "";
 	dislikes: string = "";
 	newAnimal: boolean = true;
-	constructor(){}
+	constructor(added:number){
+		this.added = moment(added).format("dddd, MMMM Do YYYY, h:mm:ss a");
+	}
 }
